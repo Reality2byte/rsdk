@@ -32,7 +32,7 @@ concurrency:
 
 jobs:
   query:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     outputs:
       products: ${{ steps.query.outputs.products }}
     steps:
