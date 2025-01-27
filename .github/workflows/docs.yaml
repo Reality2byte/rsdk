@@ -48,6 +48,7 @@ jobs:
           done
       - name: Build
         run: |
+          export PATH=src/bin/:$PATH
           mdbook build
           for po_lang in zh-CN
           do
