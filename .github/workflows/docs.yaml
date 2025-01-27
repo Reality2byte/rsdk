@@ -49,6 +49,7 @@ jobs:
       - name: Build
         run: |
           export PATH=src/bin/:$PATH
+          rsdk chroot --help
           mdbook build
           for po_lang in zh-CN
           do
